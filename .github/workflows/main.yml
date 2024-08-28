@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out Github Actions
 on: [push]
 jobs:
   Explore-Github-Actions:
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
