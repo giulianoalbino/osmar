@@ -13,4 +13,5 @@ jobs:
     - name: Install dependencies
       run:
         python -m pip install --upgrade pip
+    -name: Rus Script Python
         python ./test.py
