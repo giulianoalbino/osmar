@@ -1,8 +1,6 @@
 name: Github Actions Demo - Main
 run-name: ${{ github.actor }} is testing out Github Actions
-on:
-  push: 
-    branches: [main]
+on: [push]
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latests
@@ -15,4 +13,3 @@ jobs:
     - name: Install dependencies
       run:
         python -m pip  Install --upgrade pip
-      
