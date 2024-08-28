@@ -1,1 +1,13 @@
-print
+name: Github Actions Demo - Main
+Run-name: ${{ github.actor }} is testing out Github Actions
+on:
+  push: 
+    branches: [main]
+jobs:
+  Explore-Github-Actions:
+    runs-on: ubuntu-latests
+    strategy:
+      matrix:
+        python-version:{"pypy3.10", "3.11", "3.12"}
+      steps:
+        - run: echo ${{github.event_name}}
